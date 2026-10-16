@@ -29,3 +29,13 @@ test('get started link', async ({ page }) => {
 });
 
 
+
+
+test('get started link', async ({ page }) => {
+  await page.goto('https://www.amazon.in/');
+
+  // Click the get started link.
+  await page.getByRole('link', { name: 'Get started' }).click();
+
+  
+});
